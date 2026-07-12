@@ -1,12 +1,19 @@
-"""POBSNN v1: CPU B-spline NN with TDS-backed semantic memory adapter."""
+"""POBSNN v1.5: recursive evidence substrate for CPU B-spline research."""
 
 from pobsnn.core import BSplineBasis, BSplineBasisConfig, BSplineLayer, BSplineNeuron
 from pobsnn.controllers import MetaControllerStack
-from pobsnn.training import PolicyGatedTrainer, TrainerConfig
-from pobsnn.storage import MemoryStore, TDSVFSStore
+from pobsnn.development import (
+    CognitiveLengthStep,
+    CommunicationEpisode,
+    ControllerPosition,
+    IntervalFieldSnapshot,
+    RecursiveIdentity,
+)
 from pobsnn.evolution import EvolutionTrace
+from pobsnn.storage import MemoryStore, TDSVFSStore
+from pobsnn.training import PolicyGatedTrainer, TrainerConfig
 
-__version__ = "1.3.0"
+__version__ = "1.5.0"
 
 __all__ = [
     "BSplineBasis",
@@ -19,4 +26,9 @@ __all__ = [
     "MemoryStore",
     "TDSVFSStore",
     "EvolutionTrace",
+    "RecursiveIdentity",
+    "ControllerPosition",
+    "IntervalFieldSnapshot",
+    "CognitiveLengthStep",
+    "CommunicationEpisode",
 ]
