@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pobsnn"
-version = "1.3.0"
-description = "CPU-only policy-orchestrated B-spline neural network research substrate with TDS semantic memory adapter."
+version = "1.5.0"
+description = "CPU-only B-spline research substrate with recursive evidence episodes and TDS v3.5.2 artifact integrity integration."
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "POBSNN Research" }]

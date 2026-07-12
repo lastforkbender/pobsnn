@@ -1,77 +1,141 @@
-# POBSNN v1.3.0
+# POBSNN v1.5.0 — Recursive Evidence Substrate
 
-**Policy-Orchestrated B-Spline Neural Network**
+**POBSNN** remains a working code name for the research system currently expanded as **Policy-Orchestrated B-Spline Neural Network**.
 
-POBSNN is a CPU-first research platform for transparent, policy-governed adaptive B-spline neural computation. To train on material science datasets; and take full advantage of Staqtapp-TDS's vfs/directory semantics integrations + Spiral trace ranking feedbacks.
+v1.5.0 transforms the v1.4 communication scaffold into an executable, integrity-oriented process stride. The mathematical core remains a CPU-only, fixed-knot, additive B-spline regression layer. This release does not claim a general hidden-layer neural network or a mature cognitive system.
 
-## v1.3.0 Focus
+## Release purpose
 
-v1.3.0 adds **Trace-Ranked Controller Intelligence**.
-
-This release keeps the hard boundary intact:
-
-- POBSNN owns training, telemetry, trace ranking, controller advice, policy decisions, and evolution logic.
-- Staqtapp-TDS remains an external library and stores serialized semantic records only.
-- TDS does not reason, rank, aggregate, mutate, or participate in controller decisions.
-
-## Current Architecture
-
-- CPU-only NumPy B-spline neural core
-- Structural telemetry
-- SVD metrics
-- Meta-controller observer stack
-- Spawn arbiter with observation-only spawned controllers
-- Policy-gated training loop
-- POBSNN-owned evolution traces
-- Trace ranking and controller strategy advice
-- Optional TDS VFS semantic memory adapter
-
-## New v1.3.0 Modules
+v1.5 establishes the source-preserving substrate required before origamic unions, interval entropy, abstraction, prospective cognitive arrival, or mature personality can be implemented responsibly.
 
 ```text
-pobsnn/evolution/
-  trace_score.py
-  trace_ranker.py
-  trace_memory.py
-
-pobsnn/controllers/
-  controller_profile.py
-  strategy_advisor.py
-
-pobsnn/policy/
-  controller_update_policy.py
+B-spline training evidence
+        ↓
+meta-controller proposals
+        ↓
+trainer-integrated typed routing
+        ↓
+recursive source identities
+        ↓
+controller orthographic positions
+        ↓
+signed controller intervals
+        ↓
+bounded cognitive-length terms
+        ↓
+immutable communication episode
+        ↓
+POBSNN source scoring
+        ↓
+optional TDS v3.5.2 CSV evidence + Spiral ordering
 ```
 
-## Safety Rule
+## What v1.5 implements
 
-Trace ranking may advise controller strategy.
+### Mathematical hardening
 
-Trace ranking may not directly mutate controllers, network structure, or TDS.
+- Correct multi-output MSE gradient normalization over `samples × outputs`.
+- Candidate coefficient updates are validated before commit.
+- Non-finite candidate updates are rejected without corrupting the layer.
+- Trainer configuration and training arrays fail fast on invalid values.
 
-All controller update recommendations remain advisory and policy-gated.
+### Integrated communication
 
-## Test Status
+- The trainer now creates typed messages, selects semantically correct controllers, executes controller responses, aggregates them, and records complete route traces.
+- `MC-3` is correctly treated as the Topologic Stability Observer.
+- Route message payloads are deeply immutable.
+- Message, route, spawn, episode, stride, and recursive identities use stable SHA-256-derived identifiers.
 
-With Staqtapp-TDS v2.6.0 available on `PYTHONPATH`:
+### Recursive evidence substrate
+
+- `RecursiveIdentity` preserves controller lineage and source-parameter fingerprints.
+- `ControllerPosition` records transparent orthographic concern/evidence coordinates.
+- `IntervalFieldSnapshot` preserves signed pairwise controller intervals.
+- `CognitiveLengthStep` records dimensional movement tied to recursive identity.
+- `CommunicationEpisode` closes one bounded process stride.
+
+These records do **not** implement novelty. v1.5 explicitly prohibits a novelty score.
+
+### Reasoning/storage separation
+
+Trace construction, source scoring, controller profiling, advice, and policy review execute whether or not epoch persistence is enabled.
 
 ```text
-19 passed
+POBSNN reasons first.
+Storage receives completed evidence afterward.
 ```
 
-Without TDS installed, the optional adapter test is skipped:
+### Bounded hot memory
+
+- trainer history uses a bounded deque;
+- route history uses a bounded deque;
+- trace-score memory uses a bounded deque;
+- policy decision history uses a bounded deque.
+
+## TDS v3.5.2 integration
+
+`TDSVFSStore` now targets the authoritative Staqtapp-TDS v3.5.2 public API.
+
+It uses:
+
+- result-first JSON reads and writes;
+- validated `.tds` flush/load reopening;
+- managed CSV prepare/validate/commit transactions;
+- original-byte CSV preservation;
+- deterministic scan and row-anchor evidence;
+- content-neutral Spiral ordering of POBSNN-supplied trace metadata;
+- fail-closed storage errors.
+
+TDS records and orders supplied evidence. It does not define controller semantics, cognitive arrival, novelty, abstraction, or policy truth.
+
+## Residual CSV families
+
+Each persisted stride can produce four immutable source families:
 
 ```text
-18 passed, 1 skipped
+controller_positions
+vote_intervals
+cognitive_length
+route_responses
 ```
 
-## Optional TDS Integration
+The system writes complete CSV artifacts, not per-cell or per-row TDS hot-path mutations.
 
-POBSNN consumes the published TDS API only:
+## Reserved maturity boundary
 
-```python
-from pobsnn.storage import TDSVFSStore
+The following are represented in the release manifest but remain deliberately unimplemented:
 
-store = TDSVFSStore("./pobsnn_tds_memory")
+- discrete pre-model fold-orientation boundaries;
+- origamic unions and reversible manifestations;
+- sine/cosine manifestation tuning;
+- commutator-axis processing;
+- interval entropy and abstraction formation;
+- prospective cognitive arrival;
+- mature developmental personality.
+
+## Installation
+
+Core:
+
+```bash
+python -m pip install -e .
+python -m pip install -e .[test]
+pytest -q
 ```
 
-POBSNN never modifies the Staqtapp-TDS library.
+TDS integration uses the separately supplied Staqtapp-TDS v3.5.2 package:
+
+```bash
+python -m pip install -e /path/to/staqtapp_tds_v3_5_2
+pytest -q
+```
+
+## Demo
+
+```bash
+python demos/train_v1_5_recursive_evidence.py
+```
+
+## Integrity references
+
+The repository includes the v1.4 rigorous audit and the Ground Zero artifact-integrity manifest under `docs/reference/`. The original v1.4 archive is not embedded or modified.
